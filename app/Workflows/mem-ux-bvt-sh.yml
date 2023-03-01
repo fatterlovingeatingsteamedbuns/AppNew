@@ -1,0 +1,53 @@
+apiVersion: argoproj.io/v1alpha1
+kind: WorkflowTemplate
+metadata:
+  name: mem-uxbvt-sh
+spec:
+  arguments:
+    parameters:
+    - name: workflow-id
+  entrypoint: mem-uxbvt-sh
+  onExit: data-recover
+  templates:
+  - name: mem-uxbvt-sh
+    inputs:
+      parameters:
+      - name: workflow-id
+    steps:
+    - - name: mem-uxbvt
+        templateRef: 
+            name: python-executor
+            template: python-executor
+            clusterScope: true
+        arguments:
+          parameters:
+            - name: datafactory-args
+              value: "retrieve_v2 user -n 1 -uname bvt_admin@cpcbvtsh202106.onmicrosoft.com"
+            - name: py-filename
+              value: "Modules/run.py"
+            - name: py-args
+              value: "playwright"
+            - name: storage-name
+              value: "AppRegressionNew"
+            - name: workflow-id
+              value: '{{inputs.parameters.workflow-id}}'
+            - name: image-name
+              value: "cpcinfraacr.azurecr.io/naut/playwright-pytest-allure"
+            - name: image-tag
+              value: "v1.1"
+
+  - name: data-recover
+    inputs:
+      parameters:
+      - name: workflow-id
+        value: '{{workflow.parameters.workflow-id}}'
+    steps:
+    - - name: recover-data
+        templateRef: 
+            name: datafactory-cli
+            template: data-factory-cli
+            clusterScope: true
+        arguments:
+          parameters:
+            - name: workflow-id
+              value: '{{inputs.parameters.workflow-id}}'
