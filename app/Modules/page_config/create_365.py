@@ -57,12 +57,12 @@ Create_365 = {
     "Click Add group": {
         "name": "Click Add group",
         "locator_type": "xpath",
-        "value": '(//a[@class="msportalfx-text-primary ext-controls-selectLink fxs-fxclick"])[4]',
+        "value": '(//a[text()="+ Add group"])[1]',
     },
     "Add group": {
         "name": "Add group",
         "locator_type": "xpath",
-        "value": '(//a[@class="msportalfx-text-primary ext-controls-selectLink fxs-fxclick"])[7]',
+        "value": '(//a[text()="+ Add group"])[2]',
     },
     "Click Search": {
         "name": "Click Search",
@@ -72,12 +72,12 @@ Create_365 = {
     "Click win10app": {
         "name": "Click win10app",
         "locator_type": "xpath",
-        "value": '/html/body/div[1]/div[4]/div[2]/section/div[1]/div[1]/div[4]/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div[1]/div/div[1]/div[7]/div[1]/div/div/div/div[2]/div[2]/div/table/tbody/tr[6]/td/div/div/div',
+        "value": '//div[text()="win10app"]',
     },
     "Click win11app": {
         "name": "Click win11app",
         "locator_type": "xpath",
-        "value": '/html/body/div[1]/div[4]/div[2]/section/div[1]/div[1]/div[4]/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div[1]/div/div[1]/div[7]/div[1]/div/div/div/div[2]/div[2]/div/table/tbody/tr[8]/td/div/div/div/div[2]/div/div',
+        "value": '//div[text()="win11app"]',
     },
     "Click Select": {
         "name": "Click Select",

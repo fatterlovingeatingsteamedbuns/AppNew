@@ -37,7 +37,7 @@ Create_edge = {
     "Add group": {
         "name": "Add group",
         "locator_type": "xpath",
-        "value": '(//a[@class="msportalfx-text-primary ext-controls-selectLink fxs-fxclick"])[6]',
+        "value": '(//a[text()="+ Add group"])[2]',
     },
     "Click Create": {
         "name": "Click Create",

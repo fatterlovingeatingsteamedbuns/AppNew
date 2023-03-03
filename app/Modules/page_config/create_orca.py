@@ -58,7 +58,7 @@ Create_orca = {
     "Click Manually": {
         "name": "Click Manually",
         "locator_type": "xpath",
-        "value": '(//div[@class="fxc-dropdown-option msportalfx-tooltip-overflow fxs-portal-hover"])[10]',
+        "value": '//span[text()="Manually configure detection rules"]',
     },
     "Click Add": {
         "name": "Click Add",
@@ -73,7 +73,7 @@ Create_orca = {
     "Click MSI": {
         "name": "Click MSI",
         "locator_type": "xpath",
-        "value": '(//div[@class="fxc-dropdown-option msportalfx-tooltip-overflow fxs-portal-hover"])[11]',
+        "value": '//span[text()="MSI"]',
     },
     "Click OK": {
         "name": "Click OK",
@@ -83,11 +83,11 @@ Create_orca = {
     "Click Add group": {
         "name": "Click Add group",
         "locator_type": "xpath",
-        "value": '(//a[@class="msportalfx-text-primary ext-controls-selectLink fxs-fxclick"])[10]',
+        "value": '(//a[text()="+ Add group"])[1]',
     },
     "Click list group": {
         "name": "Add group",
         "locator_type": "xpath",
-        "value": '(//a[@class="msportalfx-text-primary ext-controls-selectLink fxs-fxclick"])[13]',
+        "value": '(//a[text()="+ Add group"])[2]',
     },
 }

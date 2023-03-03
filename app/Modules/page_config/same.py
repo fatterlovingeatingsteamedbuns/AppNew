@@ -2,7 +2,7 @@ Same = {
     "Click Add": {
         "name": "Click Add",
         "locator_type": "xpath",
-        "value": '/html/body/div[1]/div[4]/main/div[3]/div[2]/section[2]/div[1]/div[2]/div[1]/div/ul/li[1]/div/div[2]',
+        "value": '//div[text()="Add"]',
     },
     "Click Down": {
         "name": "Click Down",
@@ -17,7 +17,7 @@ Same = {
     "Click Overview": {
         "name": "Click Overview",
         "locator_type": "xpath",
-        "value": '/html/body/div[1]/div[4]/main/div[3]/div[2]/section[3]/div[1]/div[1]/div[4]/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div[1]/div[1]/div[2]/li/a/div[2]',
+        "value": '(//div[text()="Overview"])[2]',
     },
     "Click item1": {
         "name": "Click item1",
@@ -43,6 +43,11 @@ Same = {
         "name": "Delete",
         "locator_type": "xpath",
         "value": "//div[contains(text(),'2023')]",
+    },
+    "Refresh": {
+        "name": "Refresh",
+        "locator_type": "xpath",
+        "value": "//div[text()='Refresh']",
     },
 
 }

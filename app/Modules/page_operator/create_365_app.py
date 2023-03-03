@@ -125,8 +125,10 @@ class Create365:
                 helperHandle.click(page_driver,self.conf_same['click context menu'])
                 helperHandle.click(page_driver,self.conf_same['click delete button'])
                 helperHandle.click(page_driver,self.conf_same['click yes'])
+                helperHandle.click(page_driver,self.conf_same['Refresh'])
                 helperHandle.wait_element_visible(page_driver,self.conf_same['click context menu'])
-                
+                if len(count_list)==0:
+                    break
             
                     
 
@@ -137,7 +139,7 @@ if __name__ == '__main__':
     
     helperHandle.set_helper(ParametersConfig().module_type)
     browser = helperHandle.get_browser()
-    data=open(f'C:\\Users\\v-jaspershi\\Downloads\\CMD-Test-Shared\\CMD-Test-Shared\\workspace\\win365\\AppRegressionNew\\app\\data.json')
+    data=open(f'D:\\AppNew\\AppRegressionNew\\AppNew\\app\\data.json')
     data = json.load(data)
     env = data[0]['env']
     #test_result_metrics = get_test_result_metric(env)
@@ -145,11 +147,11 @@ if __name__ == '__main__':
     common = CommonPageOperator(browser,env)
     common.login_MEM_portal(data[0]['username'], data[0]['password'])
     common.goto_blade(tab='Apps',blade='Windows')
-    #c.delete()
+    c.delete()
     # c.before_choose_app_type()
     # c.first_page_365()
     # c.second_page_365()
     # c.third_page_365()
     # c.forth_page_365()
     # c.fifth_page_365()
-    c.uninstall()
+    #c.uninstall()

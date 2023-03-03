@@ -27,7 +27,7 @@ Create_web_link = {
     "Click Add group": {
         "name": "Click Add group",
         "locator_type": "xpath",
-        "value": '(//a[@class="msportalfx-text-primary ext-controls-selectLink fxs-fxclick"])[3]',
+        "value": '(//a[text()="+ Add group"])[1]',
     },
     "Click Search": {
         "name": "Click Search",

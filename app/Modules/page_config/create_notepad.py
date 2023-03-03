@@ -59,11 +59,11 @@ Create_notepad = {
     "Click Add group": {
         "name": "Add group",
         "locator_type": "xpath",
-        "value": '(//a[@class="msportalfx-text-primary ext-controls-selectLink fxs-fxclick"])[5]',
+        "value": '(//a[text()="+ Add group"])[1]',
     },
     "Add group": {
         "name": "Add group",
         "locator_type": "xpath",
-        "value": '(//a[@class="msportalfx-text-primary ext-controls-selectLink fxs-fxclick"])[8]',
+        "value": '(//a[text()="+ Add group"])[2]',
     },
 }

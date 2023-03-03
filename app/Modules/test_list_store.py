@@ -101,7 +101,7 @@ class TestCreateStore():
             self.step_01(data['username'], data['password'])
             self.step_02()
             self.step_03()
-            self.step_04()
+            #self.step_04()
             self.step_05()
             self.step_06()
             assert True

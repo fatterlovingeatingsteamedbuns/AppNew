@@ -42,7 +42,7 @@ List_store = {
     "Add group": {
         "name": "Add group",
         "locator_type": "xpath",
-        "value": '/html/body/div[1]/div[4]/main/div[3]/div[2]/section[3]/div[1]/div[1]/div[4]/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div[4]/div[2]/div[3]/div[1]/div/div/div/a',
+        "value": '(//a[text()="+ Add group"])[1]',
     },
     "Click Create": {
         "name": "Click Create",

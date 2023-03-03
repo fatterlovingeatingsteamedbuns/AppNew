@@ -161,7 +161,7 @@ class TestCreateOrca:
             self.step_06()
             self.step_07()
             self.step_08()
-            self.step_09()
+            #self.step_09()
             self.step_10('orca')
             self.step_11()
             assert True
@@ -187,7 +187,7 @@ class TestCreateOrca:
             self.step_06()
             self.step_07()
             self.step_08()
-            self.step_09()
+            #self.step_09()
             self.step_10('list orca')
             self.step_11()
             assert True

@@ -65,9 +65,9 @@ CommonPageConf = {
         "value": '//*[@id="_weave_e_60"]/div[2]',
     },
     "Windows": {
-        "name": "Windows",
+        "name": "Windows",  
         "locator_type": "xpath",
-        "value": '/html/body/div[1]/div[4]/main/div[3]/div[2]/section/div[1]/div[1]/div[4]/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/li[1]/a/div[2]',
+        "value": "//div[text()='Windows']",
     },
     "main page": {
         "name": "main page",
